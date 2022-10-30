@@ -12,12 +12,12 @@ const App: React.FC = () => {
     <div>
       <nav className="navbar navbar-expand navbar-dark bg-dark">
         <a href="/paintings" className="navbar-brand">
-          bezKoder
+          Met-App
         </a>
         <div className="navbar-nav mr-auto">
           <li className="nav-item">
             <Link to={"/paintings"} className="nav-link">
-              Tutorials
+              Paintings
             </Link>
           </li>
           <li className="nav-item">
@@ -31,9 +31,9 @@ const App: React.FC = () => {
       <div className="container mt-3">
         <Routes>
           <Route path="/" element={<PaintingsList/>} />
-          <Route path="/tutorials" element={<PaintingsList/>} />
+          <Route path="/paintings" element={<PaintingsList/>} />
           <Route path="/add" element={<AddPainting/>} />
-          <Route path="/tutorials/:id" element={<Painting/>} />
+          <Route path="/paintings/:id" element={<Painting/>} />
         </Routes>
       </div>
     </div>
