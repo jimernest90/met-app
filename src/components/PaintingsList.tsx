@@ -13,7 +13,7 @@ const PaintingsList: React.FC = () => {
     PaintingDataService.getAll()
       .then((response: any) => {
         setPaintings(response.data);
-        console.log(response.data);
+        console.log(response.data.objectIDs);
       })
       .catch((e: Error) => {
         console.log(e);
